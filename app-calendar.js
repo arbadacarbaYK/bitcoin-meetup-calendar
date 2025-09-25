@@ -39,7 +39,8 @@ function initializeCalendar() {
             description: 'Ein Tag, an dem Bitcoin-Besitzer ihre privaten Schlüssel beweisen und ihre Coins von Börsen abheben.',
             links: [
                 { name: 'Proof of Keys Website', url: 'https://www.proofofkeys.com/' },
-                { name: 'Trace Mayer Artikel', url: 'https://www.bitcoinmagazine.com/culture/proof-of-keys-day-bitcoin-independence-day' }
+                { name: 'Proof of Keys Wikipedia', url: 'https://en.wikipedia.org/wiki/Proof_of_Keys' },
+                { name: 'Trace Mayer Twitter', url: 'https://twitter.com/TraceMayer' }
             ],
             recurring: {
                 type: 'yearly',
