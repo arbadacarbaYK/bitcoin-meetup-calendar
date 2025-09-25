@@ -177,6 +177,10 @@ function initializeCalendar() {
             end: new Date(2025, 1, 19),
             type: 'bitcoin-holiday',
             description: 'Am 19. Februar 2021 überschritt die Marktkapitalisierung des gesamten Bitcoin-Netzwerks 1 Billion USD.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'feb-24-mtgox-death',
@@ -189,6 +193,10 @@ function initializeCalendar() {
                 { name: 'Mt. Gox Wikipedia', url: 'https://en.wikipedia.org/wiki/Mt._Gox' },
                 { name: 'Bitcoin Magazine Artikel', url: 'https://bitcoinmagazine.com/culture/mt-gox-collapse-bitcoin-history' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'feb-25-lightning-pizza',
@@ -201,6 +209,10 @@ function initializeCalendar() {
                 { name: 'Lightning Pizza Artikel', url: 'https://bitcoinmagazine.com/culture/lightning-pizza-day-laszlo-hanyecz' },
                 { name: 'Original Bitcoin Pizza Day', url: 'https://en.wikipedia.org/wiki/Bitcoin_Pizza_Day' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // March Events
