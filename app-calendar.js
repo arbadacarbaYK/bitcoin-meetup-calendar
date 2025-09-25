@@ -475,7 +475,8 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Am 17. November 2017 wurde SegWit2X (S2X) abgesagt, nachdem sich die Bitcoin-Community gegen die geplante Verdoppelung der Blockgröße ausgesprochen hatte. Dies war ein wichtiger Sieg für Dezentralisierung und Konsens.',
             links: [
-                { name: 'SegWit2X Erklärung', url: 'https://bitcoinmagazine.com/technical/segwit2x-explained-what-it-is-and-what-it-means-for-bitcoin' }
+                { name: 'SegWit2X Wikipedia', url: 'https://en.wikipedia.org/wiki/SegWit2x' },
+                { name: 'Bitcoin Magazine SegWit2X', url: 'https://bitcoinmagazine.com/guides/what-is-segwit2x' }
             ],
         },
         {
