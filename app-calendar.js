@@ -85,6 +85,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Genesis Transaction', url: 'https://blockstream.info/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jan-14-lightning-whitepaper',
@@ -96,6 +100,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Lightning Network Whitepaper', url: 'https://lightning.network/lightning-network-paper.pdf' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jan-19-lightning-torch',
@@ -107,6 +115,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Lightning Torch Geschichte', url: 'https://lightningtorch.com/' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jan-21-ross-pardoned',
