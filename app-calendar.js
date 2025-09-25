@@ -442,7 +442,8 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Am 8. November 2009 wurde das ikonische Bitcoin-Logo (₿) von Satoshi Nakamoto entworfen und in der Bitcoin-Software implementiert. Es wurde zum weltweiten Symbol für digitale Freiheit.',
             links: [
-                { name: 'Bitcoin Logo Geschichte', url: 'https://en.bitcoin.it/wiki/Bitcoin_logo' }
+                { name: 'Bitcoin Logo Wikipedia', url: 'https://en.wikipedia.org/wiki/Bitcoin#Logo' },
+                { name: 'Bitcoin Logo Design History', url: 'https://bitcoinmagazine.com/culture/bitcoin-logo-design-history' }
             ],
         },
         {
