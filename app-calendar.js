@@ -783,7 +783,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 10, 18, 0, 0), // January 10, 2025 (2nd Friday), 6 PM
             end: new Date(2025, 0, 10, 21, 0, 0),   // January 10, 2025, 9 PM
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Düsseldorf. Diskussion über die neuesten Bitcoin-Nachrichten und Entwicklungen.',
+            description: 'Bitcoin Meetup',
             location: 'Düsseldorf',
             organizer: 'Einundzwanzig Düsseldorf',
             links: [{ name: 'Telegram Gruppe', url: 'https://t.me/einundzwanzig_duesseldorf' }],
@@ -817,7 +817,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 6, 19, 0, 0), // January 6, 2025 (1st Monday), 7 PM
             end: new Date(2025, 0, 6, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Dortmund. Diskussion über Bitcoin und Networking.',
+            description: 'Bitcoin Meetup',
             location: 'Dortmund',
             organizer: 'Einundzwanzig Dortmund',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_dortmund' }],
@@ -829,7 +829,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 1, 19, 0, 0), // January 1, 2025 (1st Wednesday), 7 PM
             end: new Date(2025, 0, 1, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Gummersbach.',
+            description: 'Bitcoin Meetup',
             location: 'Gummersbach',
             organizer: 'Einundzwanzig Gummersbach',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_gummersbach' }],
@@ -841,7 +841,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 2, 19, 0, 0), // January 2, 2025 (1st Thursday), 7 PM
             end: new Date(2025, 0, 2, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Bonn.',
+            description: 'Bitcoin Meetup',
             location: 'Bonn',
             organizer: 'Einundzwanzig Bonn',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_bonn' }],
@@ -853,7 +853,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 2, 19, 0, 0), // January 2, 2025 (1st Thursday), 7 PM
             end: new Date(2025, 0, 2, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Moers.',
+            description: 'Bitcoin Meetup',
             location: 'Moers',
             organizer: 'Einundzwanzig Moers',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_moers' }],
@@ -867,7 +867,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 14, 19, 0, 0), // January 14, 2025 (2nd Tuesday), 7 PM
             end: new Date(2025, 0, 14, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Hennef.',
+            description: 'Bitcoin Meetup',
             location: 'Hennef',
             organizer: 'Einundzwanzig Hennef',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_hennef' }],
@@ -879,7 +879,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 8, 19, 0, 0), // January 8, 2025 (2nd Wednesday), 7 PM
             end: new Date(2025, 0, 8, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Essen.',
+            description: 'Bitcoin Meetup',
             location: 'Essen',
             organizer: 'Einundzwanzig Essen',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_essen' }],
@@ -891,7 +891,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 10, 19, 0, 0), // January 10, 2025 (2nd Friday), 7 PM
             end: new Date(2025, 0, 10, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup am Niederrhein.',
+            description: 'Bitcoin Meetup',
             location: 'Niederrhein',
             organizer: 'Einundzwanzig Niederrhein',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_niederrhein' }],
@@ -903,7 +903,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 12, 19, 0, 0), // January 12, 2025 (2nd Sunday), 7 PM
             end: new Date(2025, 0, 12, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Aachen.',
+            description: 'Bitcoin Meetup',
             location: 'Aachen',
             organizer: 'Einundzwanzig Aachen',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_aachen' }],
@@ -917,7 +917,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 15, 19, 0, 0), // January 15, 2025 (3rd Wednesday), 7 PM
             end: new Date(2025, 0, 15, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Köln.',
+            description: 'Bitcoin Meetup',
             location: 'Köln',
             organizer: 'Einundzwanzig Köln',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_koeln' }],
@@ -929,7 +929,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 16, 19, 0, 0), // January 16, 2025 (3rd Thursday), 7 PM
             end: new Date(2025, 0, 16, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Vreden.',
+            description: 'Bitcoin Meetup',
             location: 'Vreden',
             organizer: 'Einundzwanzig Vreden',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_vreden' }],
@@ -941,7 +941,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 16, 19, 0, 0), // January 16, 2025 (3rd Thursday), 7 PM
             end: new Date(2025, 0, 16, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Siegen.',
+            description: 'Bitcoin Meetup',
             location: 'Siegen',
             organizer: 'Einundzwanzig Siegen',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_siegen' }],
@@ -953,7 +953,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 17, 19, 0, 0), // January 17, 2025 (3rd Friday), 7 PM
             end: new Date(2025, 0, 17, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Ostwestfalen-Lippe.',
+            description: 'Bitcoin Meetup',
             location: 'Ostwestfalen-Lippe',
             organizer: 'Einundzwanzig Ostwestfalen-Lippe',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_ostwestfalen_lippe' }],
@@ -965,7 +965,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 19, 19, 0, 0), // January 19, 2025 (3rd Sunday), 7 PM
             end: new Date(2025, 0, 19, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Bochum.',
+            description: 'Bitcoin Meetup',
             location: 'Bochum',
             organizer: 'Einundzwanzig Bochum',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_bochum' }],
@@ -979,7 +979,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 27, 19, 0, 0), // January 27, 2025 (4th Monday), 7 PM
             end: new Date(2025, 0, 27, 22, 0, 0),
             type: 'meetup-event',
-            description: 'Monatliches Bitcoin Meetup in Heinsberg.',
+            description: 'Bitcoin Meetup',
             location: 'Heinsberg',
             organizer: 'Einundzwanzig Heinsberg',
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_heinsberg' }],
