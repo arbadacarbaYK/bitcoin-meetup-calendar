@@ -2016,9 +2016,9 @@ function initializeCalendar() {
         window.getEventLogo = (event) => {
             if (!event) return null;
             
-            // Conference logos - comprehensive list of major Bitcoin conferences
+            // Conference logos - only verified working favicons
             const conferenceLogos = {
-                // Major annual conferences
+                // Only the ones that definitely work (tested)
                 'BitFest 2025': 'https://bitfest.uk/favicon.ico',
                 'Bitcoin 2025 Conference': 'https://b.tc/favicon.ico',
                 'Bitcoin 2026': 'https://b.tc/favicon.ico',
@@ -2028,77 +2028,12 @@ function initializeCalendar() {
                 'Bitcoin Amsterdam': 'https://www.bitcoin.amsterdam/favicon.ico',
                 'Bitcoin Asia': 'https://b.tc/favicon.ico',
                 'Bitcoin MENA': 'https://b.tc/favicon.ico',
-                
-                // Adopting Bitcoin series
                 'Adopting Bitcoin': 'https://adoptingbitcoin.org/favicon.ico',
                 'Adopting Bitcoin Cape Town': 'https://adoptingbitcoin.org/favicon.ico',
-                'Adopting Bitcoin El Salvador': 'https://adoptingbitcoin.org/favicon.ico',
+                'Adopting Bitcoin El Salvador': 'https://adoptingbitcoin.org/favicon.ico'
                 
-                // Technical conferences
-                'bitcoin++ catches some waves': 'https://btcplusplus.dev/favicon.ico',
-                'bitcoin++ dives deep': 'https://btcplusplus.dev/favicon.ico',
-                'bitcoin++ goes private': 'https://btcplusplus.dev/favicon.ico',
-                'bitcoin++ scales': 'https://btcplusplus.dev/favicon.ico',
-                'bitcoin++ stands sovereign': 'https://btcplusplus.dev/favicon.ico',
-                'lightning++ strikes': 'https://btcplusplus.dev/favicon.ico',
-                
-                // Regional conferences
-                'Bitcoin Freedom Festival': 'https://www.bitcoinfreedomfestival.com/favicon.ico',
-                'Bitcoin Renaissance': 'https://bitcoin-renaissance.com/favicon.ico',
-                'Bitcoin Alive': 'https://bitcoinalive.io/favicon.ico',
-                'Bitcoin Takeover': 'https://bitcointakeover.org/favicon.ico',
-                'BitBlockBoom!': 'https://bitblockboom.com/favicon.ico',
-                'MIT Bitcoin Expo': 'https://mitbtcexpo.org/favicon.ico',
-                'OPNEXT': 'https://opnext.dev/favicon.ico',
-                'TABConf': 'https://tabconf.com/favicon.ico',
-                'Bitcoin Alpha': 'https://bitcoinalpha.org/favicon.ico',
-                'Canadian Bitcoin Conference': 'https://canadianbitcoinconf.com/favicon.ico',
-                
-                // European conferences
-                'Swiss Bitcoin Conference': 'https://swiss-bitcoin-conference.com/favicon.ico',
-                'Bitcoin Ireland Conference': 'https://www.bitcoinireland.eu/favicon.ico',
-                'Oslo Freedom Forum': 'https://oslofreedomforum.com/favicon.ico',
-                'Bitcoin Economic Forum': 'https://www.breizhbitcoin.com/favicon.ico',
-                'Pizza Day Prague': 'https://pizzaday.cz/favicon.ico',
-                'Bitcoin Filmfest 2025': 'https://bitcoinfilmfest.com/favicon.ico',
-                'Budapest Bitcoin': 'https://budapestbitcoin.com/favicon.ico',
-                'Baltic Honeybadger': 'https://baltichoneybadger.com/favicon.ico',
-                '₿TCHEL': 'https://btchel.com/favicon.ico',
-                'Plan B Forum': 'https://planb.lugano.ch/favicon.ico',
-                
-                // Asian conferences
-                'Bitcoin Seoul Conference': 'http://bitcoinseoul.kr/favicon.ico',
-                'Bitcoin Japan': 'https://btc-jpn.com/favicon.ico',
-                'BUIDL@Tokyo Bitcoin Base': 'https://btc-jpn.com/favicon.ico',
-                'Africa Bitcoin Conference': 'https://www.afrobitcoin.org/favicon.ico',
-                'Mayan Bitcoin Conference': 'https://www.mayanbitcoinconference.com/favicon.ico',
-                
-                // Specialized events
-                'Bitcoin Day Tampa': 'https://bitcoinday.io/favicon.ico',
-                'Bitcoin Day Naples': 'https://bitcoinday.io/favicon.ico',
-                'Sound Money Soiree': 'https://www.bitcoinbay.live/favicon.ico',
-                'Bitcoin Corporate Day': 'https://www.bitcoincorporateday.com/favicon.ico',
-                'Bitcoin Policy Institute Summit': 'https://www.btcpolicysummit.org/favicon.ico',
-                'The Bitcoin Rodeo': 'https://bitcoinrodeo.com/favicon.ico',
-                'Mallorca Blockchain Days V': 'https://mallorcablockchaindays.com/favicon.ico',
-                'Learning Bitcoin': 'https://www.learningbitcoin.ca/favicon.ico',
-                'BTCinDC': 'https://btcindc.com/favicon.ico',
-                'Watch out, Bitcoin!': 'https://wobitcoin.org/favicon.ico',
-                'Global Bitcoin Summit': 'https://bitcointakeover.org/favicon.ico',
-                'MassAdoption': 'https://www.campnakamoto.com/favicon.ico',
-                'Bitcoin for Financial Services Summit': 'https://denver.space/favicon.ico',
-                
-                // Brazilian conferences
-                'Bitcoin Dev Summit': 'https://satsconf.com.br/favicon.ico',
-                'Satsconf': 'https://satsconf.com.br/favicon.ico',
-                'Accelerating Bitcoin': 'https://acelerandobitcoin.com/favicon.ico',
-                
-                // Other major events
-                'Bitcoin Medellin': 'https://bitcoinmedellin.com/favicon.ico',
-                'Bitcoin Ski Summit': 'https://www.apres.tech/favicon.ico',
-                'BTC Vortex': 'https://btcvortex.com/favicon.ico',
-                'Bush Bash': 'https://bitcoinbushbash.info/favicon.ico',
-                'Opt Out Conf': 'https://optoutconf.com/favicon.ico'
+                // Removed all the broken ones that show error images
+                // Better to have no logo than a broken image
             };
             
             // No meetup logos - Telegram group avatars are not publicly accessible
