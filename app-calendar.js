@@ -165,6 +165,10 @@ function initializeCalendar() {
                 { name: 'NIP-57 Specification', url: 'https://github.com/nostr-protocol/nips/blob/master/57.md' },
                 { name: 'Lightning Zaps auf Nostr', url: 'https://nostr.com/blog/lightning-zaps' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'feb-19-trillion-dollar',
