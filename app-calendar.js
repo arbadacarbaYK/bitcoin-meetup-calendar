@@ -2101,37 +2101,15 @@ function initializeCalendar() {
                 'Opt Out Conf': 'https://optoutconf.com/favicon.ico'
             };
             
-            // Meetup logos - try Telegram group avatars
-            const meetupLogos = {
-                // Try Telegram's web avatar API (format: https://t.me/i/avatar/group_username)
-                'Einundzwanzig Meetup Düsseldorf': 'https://t.me/i/avatar/einundzwanzig_duesseldorf',
-                'Einundzwanzig Dortmund': 'https://t.me/i/avatar/einundzwanzig_dortmund',
-                'Einundzwanzig Gummersbach': 'https://t.me/i/avatar/einundzwanzig_gummersbach',
-                'Einundzwanzig Bonn': 'https://t.me/i/avatar/einundzwanzig_bonn',
-                'Einundzwanzig Moers': 'https://t.me/i/avatar/einundzwanzig_moers',
-                'Einundzwanzig Hennef': 'https://t.me/i/avatar/einundzwanzig_hennef',
-                'Einundzwanzig Essen': 'https://t.me/i/avatar/einundzwanzig_essen',
-                'Einundzwanzig Niederrhein': 'https://t.me/i/avatar/einundzwanzig_niederrhein',
-                'Einundzwanzig Aachen': 'https://t.me/i/avatar/einundzwanzig_aachen',
-                'Einundzwanzig Köln': 'https://t.me/i/avatar/einundzwanzig_koeln',
-                'Einundzwanzig Vreden': 'https://t.me/i/avatar/einundzwanzig_vreden',
-                'Einundzwanzig Siegen': 'https://t.me/i/avatar/einundzwanzig_siegen',
-                'Einundzwanzig Ostwestfalen-Lippe': 'https://t.me/i/avatar/einundzwanzig_ostwestfalen_lippe',
-                'Einundzwanzig Bochum': 'https://t.me/i/avatar/einundzwanzig_bochum',
-                'Einundzwanzig Heinsberg': 'https://t.me/i/avatar/einundzwanzig_heinsberg'
-            };
+            // No meetup logos - Telegram group avatars are not publicly accessible
+            // Meetups will display without logos
             
-            // Check for conference logo first
+            // Check for conference logo
             if (event.type === 'conference-event' && conferenceLogos[event.title]) {
                 return conferenceLogos[event.title];
             }
             
-            // Check for meetup logo
-            if (event.type === 'meetup-event' && meetupLogos[event.title]) {
-                return meetupLogos[event.title];
-            }
-            
-            // For conferences without specific logos, return null
+            // No logos for meetups or conferences without specific logos
             return null;
         };
 
