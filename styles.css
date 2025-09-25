@@ -693,16 +693,18 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    height: 450px;
+    height: calc(100vh - 250px);
+    min-height: 500px;
+    max-height: 800px;
 }
 
 .calendar-cell {
     border: 1px solid #333333;
     padding: 0.1rem;
-    min-height: calc(450px / 6);
+    min-height: calc((100vh - 250px) / 6);
     position: relative;
     overflow-y: auto;
-    max-height: calc(450px / 6);
+    max-height: calc((100vh - 250px) / 6);
 }
 
 /* Custom dark scrollbar styling */
@@ -886,8 +888,15 @@ body {
         max-width: 120px;
     }
     
+    .calendar-cells {
+        height: calc(100vh - 200px);
+        min-height: 400px;
+        max-height: 600px;
+    }
+    
     .calendar-cell {
-        min-height: 25px;
+        min-height: calc((100vh - 200px) / 6);
+        max-height: calc((100vh - 200px) / 6);
         padding: 0.02rem;
     }
     
