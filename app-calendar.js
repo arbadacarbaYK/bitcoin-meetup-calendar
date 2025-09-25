@@ -131,6 +131,10 @@ function initializeCalendar() {
                 { name: 'Free Ross Ulbricht', url: 'https://freeross.org/' },
                 { name: 'Bitcoin Magazine Artikel', url: 'https://bitcoinmagazine.com/culture/ross-ulbricht-pardon-trump-silk-road' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jan-27-silk-road',
@@ -143,6 +147,10 @@ function initializeCalendar() {
                 { name: 'Silk Road Wikipedia', url: 'https://en.wikipedia.org/wiki/Silk_Road_(marketplace)' },
                 { name: 'Bitcoin Magazine Artikel', url: 'https://bitcoinmagazine.com/culture/silk-road-bitcoin-history' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // February Events
