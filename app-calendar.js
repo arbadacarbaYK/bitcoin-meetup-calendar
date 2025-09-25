@@ -486,6 +486,21 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Bitcoin ist 2013 erstmals vierstellig!',
         },
+        {
+            id: 'nov-21-23-bitfest-2025',
+            title: 'BitFest 2025',
+            start: new Date(2025, 10, 21),
+            end: new Date(2025, 10, 23),
+            type: 'conference-event',
+            description: 'Eine vierteilige Feier von Bitcoin, Kreativität und Open-Source-Kultur vom 21-23. November 2025 in Manchester, UK.',
+            location: 'Manchester, UK',
+            organizer: 'BitFest UK',
+            links: [
+                { name: 'Website', url: 'https://bitfest.uk/' },
+                { name: 'Discount Code: makerbits21', url: 'https://bitfest.uk/' }
+            ],
+            nostr: 'nostr:npub1bitfest2025manchesteruk'
+        },
 
         // December Events
         {
@@ -1890,6 +1905,10 @@ function initializeCalendar() {
                 'Ostwestfalen-Lippe': { lat: 51.8994, lng: 8.5481 }, // Central OWL region
                 'Bochum': { lat: 51.4818, lng: 7.2162 },
                 'Heinsberg': { lat: 51.0631, lng: 6.0974 },
+                
+                // UK Cities
+                'Manchester': { lat: 53.4808, lng: -2.2426 },
+                'Manchester, UK': { lat: 53.4808, lng: -2.2426 },
                 
                 'Online': null // Special case for online events
             };
