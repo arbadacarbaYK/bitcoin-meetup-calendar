@@ -262,6 +262,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Dorsey Kongress Anhörung', url: 'https://www.youtube.com/watch?v=7qP6U3B0hOo' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'mar-28-billion-dollar',
@@ -270,6 +274,10 @@ function initializeCalendar() {
             end: new Date(2025, 2, 28),
             type: 'bitcoin-holiday',
             description: 'Am 28. März 2013 überschritt die Marktkapitalisierung des gesamten Bitcoin-Netzwerks erstmals 1 Milliarde USD.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // April Events
