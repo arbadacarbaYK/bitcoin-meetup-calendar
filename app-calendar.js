@@ -2096,16 +2096,36 @@ function initializeCalendar() {
                 'lightning++ strikes': 'https://btcplusplus.dev/favicon.ico'
             };
             
-            // For meetups, we'll use a generic Bitcoin meetup icon
-            // Since Telegram group links aren't image URLs, we'll skip logos for meetups
-            // and just show the title without a logo
+            // Meetup logos - use Einundzwanzig logo for all their meetups
+            const meetupLogos = {
+                // All Einundzwanzig meetups use the main logo
+                'Einundzwanzig Meetup Düsseldorf': 'logo.png',
+                'Einundzwanzig Dortmund': 'logo.png',
+                'Einundzwanzig Gummersbach': 'logo.png',
+                'Einundzwanzig Bonn': 'logo.png',
+                'Einundzwanzig Moers': 'logo.png',
+                'Einundzwanzig Hennef': 'logo.png',
+                'Einundzwanzig Essen': 'logo.png',
+                'Einundzwanzig Niederrhein': 'logo.png',
+                'Einundzwanzig Aachen': 'logo.png',
+                'Einundzwanzig Köln': 'logo.png',
+                'Einundzwanzig Vreden': 'logo.png',
+                'Einundzwanzig Siegen': 'logo.png',
+                'Einundzwanzig Ostwestfalen-Lippe': 'logo.png',
+                'Einundzwanzig Bochum': 'logo.png',
+                'Einundzwanzig Heinsberg': 'logo.png'
+            };
             
-            // Check for conference logo
+            // Check for conference logo first
             if (event.type === 'conference-event' && conferenceLogos[event.title]) {
                 return conferenceLogos[event.title];
             }
             
-            // For meetups, return null (no logo)
+            // Check for meetup logo
+            if (event.type === 'meetup-event' && meetupLogos[event.title]) {
+                return meetupLogos[event.title];
+            }
+            
             // For conferences without specific logos, return null
             return null;
         };
