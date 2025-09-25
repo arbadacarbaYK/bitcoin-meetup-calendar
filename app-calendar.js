@@ -520,7 +520,11 @@ function initializeCalendar() {
             start: new Date(2025, 11, 12),
             end: new Date(2025, 11, 12),
             type: 'bitcoin-holiday',
-            description: 'An diesem Tag im Jahr 2010 sandte Satoshi ihre letzte Nachricht an die Welt und stellte dann die öffentliche Kommunikation mit der Bitcoin-Community ein.',
+            description: 'An diesem Tag im Jahr 2010 sandte Satoshi ihre letzte Nachricht an die Welt und stellte dann die öffentliche Kommunikation mit der Bitcoin-Community ein. "La Fuga" bedeutet "Die Flucht" - Satoshi verschwand nach diesem letzten Post.',
+            links: [
+                { name: 'Satoshi Final Post', url: 'https://bitcointalk.org/index.php?topic=2216.msg29479#msg29479' },
+                { name: 'Satoshi Mystery', url: 'https://bitcoinmagazine.com/culture/satoshi-nakamoto-final-post-bitcoin-good-hands' }
+            ],
         },
         {
             id: 'dec-18-hodl-day',
