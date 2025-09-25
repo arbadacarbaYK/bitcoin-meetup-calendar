@@ -288,6 +288,10 @@ function initializeCalendar() {
             end: new Date(2025, 3, 18),
             type: 'bitcoin-holiday',
             description: 'Am 18. April 2011 minte der erste Altcoin, Namecoin, seinen Genesis-Block.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'apr-23-bitcoin-good-hands',
@@ -300,6 +304,10 @@ function initializeCalendar() {
                 { name: 'Satoshi Final Post', url: 'https://bitcointalk.org/index.php?topic=7.msg119#msg119' },
                 { name: 'Satoshi Mystery', url: 'https://www.bitcoinmagazine.com/culture/satoshi-nakamoto-final-post-bitcoin-good-hands' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // May Events
