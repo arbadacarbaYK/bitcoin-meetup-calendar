@@ -732,6 +732,19 @@ function initializeCalendar() {
                 { name: 'Discount Code: makerbits21', url: 'https://bitfest.uk/' }
             ]
         },
+        {
+            id: 'nov-1-noderunners-2025',
+            title: 'Noderunners Conference',
+            start: new Date(2025, 10, 1),
+            end: new Date(2025, 10, 1),
+            type: 'conference-event',
+            description: 'Bitcoin maximalists unite! Join the orange-pilled community for a Bitcoin-only event in Amsterdam.',
+            location: 'Generator Amsterdam, Netherlands',
+            organizer: 'Noderunners',
+            links: [
+                { name: 'Website', url: 'https://noderunners.network/en/' }
+            ]
+        },
 
         // December Events
         {
