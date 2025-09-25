@@ -40,7 +40,7 @@ function initializeCalendar() {
             links: [
                 { name: 'Proof of Keys Website', url: 'https://www.proofofkeys.com/' },
                 { name: 'Proof of Keys Wikipedia', url: 'https://en.wikipedia.org/wiki/Proof_of_Keys' },
-                { name: 'Trace Mayer Twitter', url: 'https://twitter.com/TraceMayer' }
+                { name: 'Trace Mayer X', url: 'https://x.com/TraceMayer' }
             ],
             recurring: {
                 type: 'yearly',
@@ -68,7 +68,7 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Am 10. Januar 2009 twitterte Hal Finney legendär "Running bitcoin". Dies war der erste Tweet über Bitcoin und markierte den Beginn einer revolutionären Technologie.',
             links: [
-                { name: 'Hal Finney Tweet', url: 'https://twitter.com/halfin/status/1110302988' }
+                { name: 'Hal Finney Tweet', url: 'https://x.com/halfin/status/1110302988' }
             ],
             recurring: {
                 type: 'yearly',
@@ -111,7 +111,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 19),
             end: new Date(2025, 0, 19),
             type: 'bitcoin-holiday',
-            description: 'Am 19. Januar 2019 startete der pseudonyme Twitter-Nutzer @hodlonaut den Lightning Torch - ein globales Experiment, bei dem Bitcoin über das Lightning Network von Person zu Person weitergegeben wurde. Es demonstrierte die Machbarkeit von Mikrozahlungen.',
+            description: 'Am 19. Januar 2019 startete der pseudonyme X-Nutzer @hodlonaut den Lightning Torch - ein globales Experiment, bei dem Bitcoin über das Lightning Network von Person zu Person weitergegeben wurde. Es demonstrierte die Machbarkeit von Mikrozahlungen.',
             links: [
                 { name: 'Lightning Torch Geschichte', url: 'https://lightningtorch.com/' }
             ],
@@ -1224,7 +1224,7 @@ function initializeCalendar() {
             type: 'conference-event',
             description: 'Lake Satoshi Campout in Lansing, Michigan',
             location: 'Lansing, MI',
-            links: [{ name: 'Website', url: 'https://twitter.com/LakeSatoshi' }],
+            links: [{ name: 'Website', url: 'https://x.com/LakeSatoshi' }],
         },
         {
             id: 'aug-7-8-bitcoin-plus-plus-riga',
