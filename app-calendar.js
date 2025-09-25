@@ -798,7 +798,7 @@ function initializeCalendar() {
             start: new Date(2025, 0, 22, 19, 0, 0), // January 22, 2025 (4th Wednesday), 7 PM
             end: new Date(2025, 0, 22, 22, 0, 0),   // January 22, 2025, 10 PM
             type: 'meetup-event',
-            description: 'Regelmäßiges Bitcoin Meetup in Düsseldorf. Technische Diskussionen und Networking.',
+            description: 'Bitcoin Meetup',
             location: 'Bitcoin Space Düsseldorf',
             organizer: 'Einundzwanzig Düsseldorf',
             links: [{ name: 'Telegram Gruppe', url: 'https://t.me/einundzwanzig_duesseldorf' }],
