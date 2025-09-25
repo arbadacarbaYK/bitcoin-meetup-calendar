@@ -55,6 +55,10 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Am 8. Januar 2018 wurde die erste echte Zahlung über das Lightning Network für ein TorGuard VPN-Abonnement gesendet.',
             links: [{ name: 'Lightning Network', url: 'https://lightning.network/' }],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jan-10-running-bitcoin',
@@ -66,6 +70,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Hal Finney Tweet', url: 'https://twitter.com/halfin/status/1110302988' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jan-11-genesis-transaction',
