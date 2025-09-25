@@ -730,8 +730,7 @@ function initializeCalendar() {
             links: [
                 { name: 'Website', url: 'https://bitfest.uk/' },
                 { name: 'Discount Code: makerbits21', url: 'https://bitfest.uk/' }
-            ],
-            nostr: 'nostr:npub1bitfest2025manchesteruk'
+            ]
         },
 
         // December Events
