@@ -23,8 +23,7 @@ Ein deutscher Bitcoin Meetup Kalender mit Bitcoin-Feiertagen, lokalen Meetups un
 
 ## 🔗 Links
 
-- **Einundzwanzig Meetups**: [https://einundzwanzig.space/meetups](https://einundzwanzig.space/meetups)
-- **Telegram Gruppen**: Direkte Links zu allen NRW Meetup-Gruppen
+- **Telegram und Nostr Gruppen**: Direkte Links zu allen NRW Meetup-Gruppen
 
 ## 📱 Verwendung
 
@@ -40,6 +39,3 @@ Ein deutscher Bitcoin Meetup Kalender mit Bitcoin-Feiertagen, lokalen Meetups un
 - **Deployment**: GitHub Pages
 - **Responsive**: Mobile-optimiert
 
-## 📝 Admin-Guide
-
-Für Administratoren siehe: `README-DE.md`
