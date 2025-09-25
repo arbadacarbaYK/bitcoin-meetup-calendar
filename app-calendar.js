@@ -223,6 +223,10 @@ function initializeCalendar() {
             end: new Date(2025, 2, 3),
             type: 'bitcoin-holiday',
             description: 'Am 3. März 2017 übertraf 1 Bitcoin erstmals den Preis von 1 Unze Gold.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'mar-07-not-dorian',
@@ -231,6 +235,10 @@ function initializeCalendar() {
             end: new Date(2025, 2, 7),
             type: 'bitcoin-holiday',
             description: 'Am 7. März 2014 erklärte Dorian Nakamoto öffentlich, dass er nicht Satoshi Nakamoto sei.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'mar-12-block-rollback',
@@ -239,6 +247,10 @@ function initializeCalendar() {
             end: new Date(2025, 2, 12),
             type: 'bitcoin-holiday',
             description: 'Am 12. März 2013 führte ein Bug zu einem Fork zwischen Bitcoin-Versionen 0.7 und 0.8. Ein Rollback von 24 Blöcken verhinderte einen Netzwerk-Fork.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'mar-25-moscow-time',
