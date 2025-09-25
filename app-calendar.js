@@ -318,6 +318,10 @@ function initializeCalendar() {
             end: new Date(2025, 4, 2),
             type: 'bitcoin-holiday',
             description: 'Am 2. Mai 2013 wurde der erste Bitcoin-Geldautomat in einem Vancouver-Café installiert.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'may-10-lightning-ltc',
@@ -326,6 +330,10 @@ function initializeCalendar() {
             end: new Date(2025, 4, 10),
             type: 'bitcoin-holiday',
             description: 'Christian Decker von Blockstream machte die erste vollständige, sichere Lightning-Zahlung auf einem Nicht-Testnetzwerk.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'may-22-bitcoin-pizza',
