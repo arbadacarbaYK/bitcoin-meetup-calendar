@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Meetup Kalender</title>
+    <meta name="description" content="Bitcoin Meetup Events und wichtige Bitcoin Feiertage für die einundzwanzig Bitcoin Meetup Community">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-big-calendar/1.8.2/react-big-calendar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>₿</text></svg>">
+    <style>
+        /* Custom German styling */
+        .calendar-title {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .event-details {
+            background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+            border-left: 4px solid var(--bitcoin-orange);
+        }
+        .download-section {
+            background-color: var(--dark-card);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-top: 2rem;
+            border: 1px solid var(--border-color);
+        }
+        .download-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .download-option {
+            background-color: var(--dark-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .download-option h4 {
+            color: var(--bitcoin-orange);
+            margin-bottom: 1rem;
+        }
+        .download-option p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--dark-bg);
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-color);
+        }
+        .stat-item strong {
+            display: block;
+            font-size: 1.5rem;
+            color: var(--bitcoin-orange);
+        }
+        .stat-item span {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="calendar"></div>
+    
+    <!-- React and dependencies -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-big-calendar/1.8.2/react-big-calendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/react-bootstrap@2.9.2/dist/react-bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-big-calendar/1.8.2/react-big-calendar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+    <!-- German App -->
+    <script src="app-calendar.js"></script>
+</body>
+</html>

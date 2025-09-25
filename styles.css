@@ -1,0 +1,904 @@
+/* Bitcoin Meetup Calendar Styles */
+:root {
+    --bitcoin-orange: #f7931a;
+    --bitcoin-orange-dark: #e8821e;
+    --dark-bg: #000000;
+    --dark-card: #000000;
+    --text-light: #ffffff;
+    --text-muted: #ffffff;
+    --border-color: #000000;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Header - Removed, now integrated in calendar header */
+
+.logo-link {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.main-logo {
+    max-height: 40px;
+    width: auto;
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Ensure all images in calendar header have transparent background */
+.calendar-title img,
+.main-logo,
+.logo-link img,
+img[alt*="Einundzwanzig"],
+img[src*="logo.png"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
+
+/* Additional specificity for logo images */
+.calendar-title .main-logo {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    filter: none !important;
+}
+
+/* Force transparency with maximum specificity */
+body .calendar-title img.main-logo,
+html body .calendar-title img.main-logo,
+#calendar .calendar-title img.main-logo {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
+
+/* Logo visibility rules */
+img[src*="logo.png"],
+img.main-logo,
+.calendar-title img,
+img[alt*="Einundzwanzig"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Force transparent background specifically for logo */
+.calendar-title img.main-logo {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
+
+/* Maximum specificity override for logo */
+html body #calendar .calendar-container .calendar-title .logo-link img.main-logo,
+html body #calendar .calendar-container .calendar-title img.main-logo,
+html body .calendar-title img.main-logo,
+html body img.main-logo {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--bitcoin-orange) 0%, var(--bitcoin-orange-dark) 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.bitcoin-symbol {
+    font-size: 2rem;
+    color: white;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-bitcoin {
+    background-color: var(--bitcoin-orange);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-bitcoin:hover {
+    background-color: var(--bitcoin-orange-dark);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.btn-outline-bitcoin {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-outline-bitcoin:hover {
+    background-color: white;
+    color: var(--bitcoin-orange);
+}
+
+/* Main content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Calendar container */
+.calendar-container {
+    background-color: var(--dark-card);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.calendar-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-light);
+    margin: 0;
+}
+
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background-color: #000000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch.active {
+    background-color: var(--bitcoin-orange);
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-switch.active .toggle-slider {
+    transform: translateX(26px);
+}
+
+.view-toggle {
+    display: flex;
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.view-btn {
+    background-color: var(--border-color);
+    border: none;
+    color: var(--text-muted);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-btn.active {
+    background-color: var(--bitcoin-orange);
+    color: white;
+}
+
+.view-btn:hover:not(.active) {
+    background-color: #000000;
+    color: var(--text-light);
+}
+
+/* React Big Calendar overrides */
+.rbc-calendar {
+    background-color: transparent;
+    color: var(--text-light);
+}
+
+.rbc-header {
+    background-color: var(--dark-card);
+    color: var(--text-light);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 0.5rem;
+    font-weight: 600;
+}
+
+.rbc-month-view {
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.rbc-day-bg {
+    background-color: var(--dark-card);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rbc-day-bg.rbc-today {
+    background-color: rgba(247, 147, 26, 0.1);
+}
+
+.rbc-date-cell {
+    color: var(--text-light);
+    padding: 0.5rem;
+}
+
+.rbc-date-cell.rbc-now {
+    font-weight: bold;
+    color: var(--bitcoin-orange);
+}
+
+.rbc-button-link {
+    color: var(--text-light);
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.rbc-button-link:hover {
+    background-color: rgba(247, 147, 26, 0.1);
+}
+
+/* Event styles */
+.rbc-event {
+    background-color: var(--bitcoin-orange);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.rbc-event.meetup-event {
+    background-color: #4CAF50;
+}
+
+.rbc-event.bitcoin-holiday {
+    background-color: var(--bitcoin-orange);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+}
+
+.rbc-event-content {
+    color: white;
+    font-weight: 500;
+}
+
+/* Modal styles */
+.modal-content {
+    background-color: var(--dark-card);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+.form-control {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+.form-control:focus {
+    background-color: var(--dark-bg);
+    border-color: var(--bitcoin-orange);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.2rem rgba(247, 147, 26, 0.25);
+}
+
+.form-label {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/* Event details */
+.event-details {
+    background-color: var(--dark-card);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.event-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--bitcoin-orange);
+    margin-bottom: 0.5rem;
+}
+
+
+.event-description {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.event-description a {
+    color: var(--bitcoin-orange);
+    text-decoration: none;
+}
+
+.event-description a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .logo-header {
+        padding: 0.5rem 0;
+    }
+    
+    .main-logo {
+        max-height: 60px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .calendar-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .calendar-container {
+        padding: 0;
+    }
+    
+    .calendar-content {
+        padding: 1rem;
+    }
+}
+
+/* Loading spinner */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: var(--text-muted);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--bitcoin-orange);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--dark-card);
+    color: var(--text-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--bitcoin-orange);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    max-width: 400px;
+}
+
+.notification.success {
+    border-left-color: #4CAF50;
+}
+
+.notification.error {
+    border-left-color: #f44336;
+}
+
+.notification.warning {
+    border-left-color: #ff9800;
+}
+
+/* Bitcoin.holidays style calendar */
+.calendar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    position: relative;
+}
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.calendar-content {
+    padding: 2rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.calendar-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    justify-content: flex-start;
+    padding-right: 150px;
+    background: transparent !important;
+    background-color: transparent !important;
+    position: relative;
+}
+
+.bitcoin-logo {
+    font-size: 2rem;
+    color: #f7931a;
+}
+
+.calendar-name {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+.month-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    min-width: 200px;
+    text-align: center;
+}
+
+.calendar-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 120px;
+    z-index: 1000;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    z-index: 11;
+}
+
+.nav-button:hover {
+    background-color: #000000;
+}
+
+.calendar-icon {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.calendar-icon:hover {
+    background-color: #000000;
+}
+
+.calendar-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.action-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.2s;
+    flex: 1;
+    max-width: 150px;
+    font-weight: normal;
+}
+
+.action-button:hover {
+    background-color: #444444;
+    border-color: #666666;
+}
+
+.action-button.subscribe {
+    background-color: #f7931a;
+}
+
+.calendar-grid {
+    background-color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.day-headers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #000000;
+}
+
+.day-header {
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    border-right: 1px solid #000000;
+}
+
+.day-header:last-child {
+    border-right: none;
+}
+
+.calendar-cells {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 450px;
+}
+
+.calendar-cell {
+    border: 1px solid #333333;
+    padding: 0.1rem;
+    min-height: calc(450px / 6);
+    position: relative;
+    overflow-y: auto;
+    max-height: calc(450px / 6);
+}
+
+/* Custom dark scrollbar styling */
+.calendar-cell::-webkit-scrollbar {
+    width: 6px;
+}
+
+.calendar-cell::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 3px;
+}
+
+.calendar-cell::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 3px;
+}
+
+.calendar-cell::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* Firefox scrollbar styling */
+.calendar-cell {
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #000000;
+}
+
+.calendar-cell.empty {
+    background-color: #000000;
+}
+
+.calendar-cell.has-day {
+    background-color: #000000;
+}
+
+.day-number {
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.event-item {
+    margin-bottom: 0.2rem;
+    padding: 0.1rem;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    line-height: 1.1;
+}
+
+.event-item.bitcoin-holiday {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.event-item.meetup-event {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.event-item.conference-event {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.event-title {
+    font-weight: bold;
+    margin-bottom: 0.02rem;
+    font-size: 0.5rem;
+}
+
+/* Event title colors by type */
+.event-item.bitcoin-holiday .event-title {
+    color: #f7931a;
+}
+
+.event-item.meetup-event .event-title {
+    color: #ffd700;
+}
+
+.event-item.conference-event .event-title {
+    color: #9d4edd;
+}
+
+
+.event-description {
+    font-size: 0.4rem;
+    opacity: 0.9;
+    line-height: 0.9;
+}
+
+.event-link {
+    font-size: 0.5rem;
+    color: #ffd700;
+    margin-top: 0.1rem;
+    font-weight: bold;
+}
+
+.event-location {
+    font-size: 0.5rem;
+    color: #4a9eff;
+    margin-top: 0.1rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.event-location:hover {
+    opacity: 0.8;
+}
+
+.event-nostr {
+    font-size: 0.5rem;
+    color: #ff6b35;
+    margin-top: 0.1rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.event-nostr:hover {
+    opacity: 0.8;
+}
+
+.event-links-row {
+    display: flex;
+    align-items: center;
+    margin-top: 0.1rem;
+    font-size: 0.35rem;
+    gap: 0.1rem;
+}
+
+.event-links-row span {
+    transition: opacity 0.3s ease;
+}
+
+.event-links-row span:hover {
+    opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .calendar-container {
+        padding: 0;
+    }
+    
+    .calendar-content {
+        padding: 1rem;
+    }
+    
+    .calendar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main-logo {
+        max-height: 30px;
+        margin-right: 0.3rem;
+    }
+    
+    
+    .calendar-title {
+        padding-right: 0;
+    }
+    
+    .month-year {
+        font-size: 1.2rem;
+    }
+    
+    .calendar-actions {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .action-button {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+        max-width: 120px;
+    }
+    
+    .calendar-cell {
+        min-height: 25px;
+        padding: 0.02rem;
+    }
+    
+        .event-item {
+            font-size: 0.75rem;
+            padding: 0.05rem;
+            margin-bottom: 0.15rem;
+        }
+    
+    .event-links-row {
+        font-size: 0.3rem;
+        gap: 0.05rem;
+    }
+}
