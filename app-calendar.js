@@ -464,7 +464,8 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Am 15. November 2016 startete BitConnect, einer der berüchtigsten Krypto-Scams der Geschichte. Das Ponzi-Schema brach 2018 zusammen und kostete Investoren Milliarden.',
             links: [
-                { name: 'BitConnect Geschichte', url: 'https://www.coindesk.com/learn/what-was-bitconnect-and-how-did-it-collapse/' }
+                { name: 'BitConnect Wikipedia', url: 'https://en.wikipedia.org/wiki/BitConnect' },
+                { name: 'BitConnect Collapse', url: 'https://bitcoinmagazine.com/culture/bitconnect-collapse-what-happened' }
             ],
         },
         {
