@@ -421,7 +421,11 @@ function initializeCalendar() {
             start: new Date(2025, 6, 3),
             end: new Date(2025, 6, 3),
             type: 'bitcoin-holiday',
-            description: 'Dieser Tag markiert den Beginn des ersten "Utility Token" ICO namens Mastercoin (später zu Omni umbenannt).',
+            description: 'Am 3. Juli 2013 startete Mastercoin (später Omni), das erste "Utility Token" ICO. Dies markierte den Beginn der Altcoin-Ära und führte zur Prägung des Begriffs "Shitcoin" für minderwertige Kryptowährungen. Es erinnert daran, dass Bitcoin das einzige digitale Gold ist.',
+            links: [
+                { name: 'Mastercoin History', url: 'https://en.wikipedia.org/wiki/Omni_Layer' },
+                { name: 'Altcoin Origins', url: 'https://bitcoinmagazine.com/culture/altcoin-history-mastercoin-first-ico' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -435,7 +439,11 @@ function initializeCalendar() {
             start: new Date(2025, 7, 1),
             end: new Date(2025, 7, 1),
             type: 'bitcoin-holiday',
-            description: 'Das offizielle Ende der Blocksize-Kriege. Bitcoin-Nutzer demonstrierten ihre Unabhängigkeit von der Miner-Kontrolle.',
+            description: 'Am 1. August 2017 endeten die Bitcoin "Blocksize-Kriege" mit der Abspaltung von Bitcoin Cash. Dies war ein wichtiger Moment für Bitcoin\'s Unabhängigkeit - die Community wählte Dezentralisierung über größere Blöcke. Bitcoin blieb unverändert und bewahrte seine Kernprinzipien.',
+            links: [
+                { name: 'Bitcoin Cash Fork', url: 'https://en.wikipedia.org/wiki/Bitcoin_Cash' },
+                { name: 'Blocksize Wars', url: 'https://bitcoinmagazine.com/culture/bitcoin-blocksize-wars-history' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -447,7 +455,11 @@ function initializeCalendar() {
             start: new Date(2025, 7, 8),
             end: new Date(2025, 7, 8),
             type: 'bitcoin-holiday',
-            description: 'Segregated Witness wurde offiziell durch den UASF-Client im Bitcoin-Netzwerk gesperrt.',
+            description: 'Am 8. August 2017 wurde Segregated Witness (SegWit) durch User-Activated Soft Fork (UASF) im Bitcoin-Netzwerk aktiviert. SegWit war ein wichtiger Upgrade, der Transaktionskapazität erhöhte und das Lightning Network ermöglichte, ohne die Blockgröße zu erhöhen.',
+            links: [
+                { name: 'SegWit BIP', url: 'https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki' },
+                { name: 'UASF Movement', url: 'https://bitcoinmagazine.com/technical/uasf-user-activated-soft-fork-explained' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -475,7 +487,11 @@ function initializeCalendar() {
             start: new Date(2025, 7, 18),
             end: new Date(2025, 7, 18),
             type: 'bitcoin-holiday',
-            description: 'Satoshi Nakamoto registrierte Bitcoin.org am 18. August 2008, bevor das offizielle Whitepaper veröffentlicht wurde.',
+            description: 'Am 18. August 2008 registrierte Satoshi Nakamoto die Domain Bitcoin.org, bevor das offizielle Whitepaper veröffentlicht wurde. Diese Domain wurde zur zentralen Informationsquelle für Bitcoin und beherbergt bis heute das ursprüngliche Bitcoin-Whitepaper.',
+            links: [
+                { name: 'Bitcoin.org', url: 'https://bitcoin.org/' },
+                { name: 'Bitcoin Whitepaper', url: 'https://bitcoin.org/bitcoin.pdf' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -483,11 +499,15 @@ function initializeCalendar() {
         },
         {
             id: 'aug-20-satoshi-emails-adam',
-            title: 'Satoshi Emails Adam Back For Hashcash Citation',
+            title: 'Satoshi Emails Adam Back',
             start: new Date(2025, 7, 20),
             end: new Date(2025, 7, 20),
             type: 'bitcoin-holiday',
-            description: 'Satoshi Nakamoto kontaktierte Adam Back an diesem Tag, um ihn über das Whitepaper zu informieren und die korrekte Zitierinformation für Adams Hashcash-Paper zu bestätigen.',
+            description: 'Am 20. August 2008 kontaktierte Satoshi Nakamoto Adam Back, den Erfinder von Hashcash, um ihn über das Bitcoin-Whitepaper zu informieren und die korrekte Zitierinformation zu bestätigen. Hashcash war eine wichtige Grundlage für Bitcoins Proof-of-Work-Algorithmus.',
+            links: [
+                { name: 'Hashcash Paper', url: 'http://hashcash.org/papers/hashcash.pdf' },
+                { name: 'Adam Back Twitter', url: 'https://x.com/adam3us' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -499,7 +519,11 @@ function initializeCalendar() {
             start: new Date(2025, 7, 21),
             end: new Date(2025, 7, 21),
             type: 'bitcoin-holiday',
-            description: 'Heute ist Bitcoin Infinity Day: ∞/21M am 21.8!',
+            description: 'Am 21. August feiert die Bitcoin-Community den "Bitcoin Infinity Day" - ein Tag, der das Konzept der Unendlichkeit (∞) und die begrenzte Gesamtmenge von 21 Millionen Bitcoin symbolisiert. Es erinnert daran, dass Bitcoin eine endliche Ressource ist, während traditionelles Fiat-Geld unendlich gedruckt werden kann.',
+            links: [
+                { name: 'Bitcoin Supply Limit', url: 'https://bitcoin.org/en/bitcoin-paper' },
+                { name: '21 Million Bitcoin', url: 'https://bitcoinmagazine.com/guides/why-bitcoin-limited-21-million' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -507,11 +531,15 @@ function initializeCalendar() {
         },
         {
             id: 'aug-23-segwit-activation',
-            title: 'Activation Day',
+            title: 'SegWit Activation Day',
             start: new Date(2025, 7, 23),
             end: new Date(2025, 7, 23),
             type: 'bitcoin-holiday',
-            description: 'Am 23. August 2017 um 1:57 UTC aktivierte sich Segwit im Bitcoin-Mainnet bei Blockhöhe 481.824.',
+            description: 'Am 23. August 2017 um 1:57 UTC aktivierte sich Segregated Witness (SegWit) offiziell im Bitcoin-Mainnet bei Blockhöhe 481.824. Dies war ein historischer Moment, der Bitcoin\'s Skalierbarkeit verbesserte und den Weg für das Lightning Network ebnete.',
+            links: [
+                { name: 'SegWit Activation Block', url: 'https://blockstream.info/block/0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893' },
+                { name: 'SegWit Benefits', url: 'https://bitcoinmagazine.com/technical/segwit-benefits-bitcoin-network' }
+            ],
             recurring: {
                 type: 'yearly',
                 pattern: 'same-date'
@@ -735,18 +763,7 @@ function initializeCalendar() {
                 pattern: 'same-date'
             }
         },
-        {
-            id: 'dec-17-bitcoin-ath',
-            title: 'Bitcoin All-Time High Day',
-            start: new Date(2025, 11, 17),
-            end: new Date(2025, 11, 17),
-            type: 'bitcoin-holiday',
-            description: 'Am 17. Dezember 2017 erreichte Bitcoin sein damaliges Allzeithoch von fast 20.000 USD. Dies markierte den Höhepunkt des Bitcoin-Booms von 2017.',
-            recurring: {
-                type: 'yearly',
-                pattern: 'same-date'
-            }
-        },
+ 
         {
             id: 'dec-18-hodl-day',
             title: 'HODL day',
@@ -1996,6 +2013,52 @@ function initializeCalendar() {
         };
 
 
+        // Function to get logo URL for events
+        window.getEventLogo = (event) => {
+            if (!event) return null;
+            
+            // Conference logos
+            const conferenceLogos = {
+                'BitFest 2025': 'https://bitfest.uk/favicon.ico',
+                'Bitcoin 2025 Conference': 'https://b.tc/favicon.ico',
+                'BTC Prague': 'https://btcprague.com/favicon.ico',
+                'Bitcoin Amsterdam': 'https://www.bitcoin.amsterdam/favicon.ico',
+                'Adopting Bitcoin': 'https://adoptingbitcoin.org/favicon.ico',
+                'Bitcoin Conference': 'https://b.tc/favicon.ico'
+            };
+            
+            // Meetup logos (Telegram group avatars)
+            const meetupLogos = {
+                'Einundzwanzig Meetup Düsseldorf': 'https://t.me/einundzwanzig_duesseldorf',
+                'Einundzwanzig Dortmund': 'https://t.me/einundzwanzig_dortmund',
+                'Einundzwanzig Gummersbach': 'https://t.me/einundzwanzig_gummersbach',
+                'Einundzwanzig Bonn': 'https://t.me/einundzwanzig_bonn',
+                'Einundzwanzig Moers': 'https://t.me/einundzwanzig_moers',
+                'Einundzwanzig Hennef': 'https://t.me/einundzwanzig_hennef',
+                'Einundzwanzig Essen': 'https://t.me/einundzwanzig_essen',
+                'Einundzwanzig Niederrhein': 'https://t.me/einundzwanzig_niederrhein',
+                'Einundzwanzig Aachen': 'https://t.me/einundzwanzig_aachen',
+                'Einundzwanzig Köln': 'https://t.me/einundzwanzig_koeln',
+                'Einundzwanzig Vreden': 'https://t.me/einundzwanzig_vreden',
+                'Einundzwanzig Siegen': 'https://t.me/einundzwanzig_siegen',
+                'Einundzwanzig Ostwestfalen-Lippe': 'https://t.me/einundzwanzig_ostwestfalen_lippe',
+                'Einundzwanzig Bochum': 'https://t.me/einundzwanzig_bochum',
+                'Einundzwanzig Heinsberg': 'https://t.me/einundzwanzig_heinsberg'
+            };
+            
+            // Check for conference logo
+            if (event.type === 'conference-event' && conferenceLogos[event.title]) {
+                return conferenceLogos[event.title];
+            }
+            
+            // Check for meetup logo
+            if (event.type === 'meetup-event' && meetupLogos[event.title]) {
+                return meetupLogos[event.title];
+            }
+            
+            return null;
+        };
+
         // Function to generate btcmap.org link for location
         window.generateLocationLink = (location) => {
             if (!location) return null;
@@ -2466,13 +2529,36 @@ function initializeCalendar() {
                         color: '#ffffff'
                     }
                 },
-                    React.createElement('h2', { 
-                        style: { 
-                            margin: '0 0 1rem 0',
-                            color: selectedEvent.type === 'bitcoin-holiday' ? '#f7931a' : 
-                                   selectedEvent.type === 'meetup-event' ? '#ffd700' : '#9d4edd'
-                        }
-                    }, selectedEvent.title),
+                        React.createElement('div', {
+                        style: { display: 'flex', alignItems: 'center', marginBottom: '1rem' }
+                    },
+                        // Event logo
+                        (() => {
+                            const logoUrl = window.getEventLogo(selectedEvent);
+                            if (logoUrl) {
+                                return React.createElement('img', {
+                                    src: logoUrl,
+                                    alt: `${selectedEvent.title} Logo`,
+                                    style: {
+                                        width: '48px',
+                                        height: '48px',
+                                        marginRight: '1rem',
+                                        borderRadius: selectedEvent.type === 'conference-event' ? '4px' : '50%',
+                                        objectFit: 'cover'
+                                    }
+                                });
+                            }
+                            return null;
+                        })(),
+                        
+                        React.createElement('h2', { 
+                            style: { 
+                                margin: '0',
+                                color: selectedEvent.type === 'bitcoin-holiday' ? '#f7931a' : 
+                                       selectedEvent.type === 'meetup-event' ? '#ffd700' : '#9d4edd'
+                            }
+                        }, selectedEvent.title)
+                    ),
                     
                     React.createElement('p', { 
                         style: { 
