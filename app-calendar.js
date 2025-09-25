@@ -2477,7 +2477,7 @@ function initializeCalendar() {
                                     style: { cursor: 'pointer' }
                                 },
                                     React.createElement('div', { className: 'event-title' }, event.title),
-                                    React.createElement('div', { className: 'event-description' }, event.description.substring(0, 50) + '...'),
+                                    React.createElement('div', { className: 'event-description' }, event.description),
                                     linksRow.length > 0 && 
                                         React.createElement('div', { className: 'event-links-row' }, ...linksRow)
                                 );
