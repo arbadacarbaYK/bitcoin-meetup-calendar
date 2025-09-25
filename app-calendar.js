@@ -2036,24 +2036,24 @@ function initializeCalendar() {
                 // Removed all the broken/unverified favicon URLs
             };
             
-            // Meetup logos - use Einundzwanzig logo for all their meetups
+            // Meetup logos - try Telegram group avatars
             const meetupLogos = {
-                // All Einundzwanzig meetups use the main logo
-                'Einundzwanzig Meetup Düsseldorf': 'logo.png',
-                'Einundzwanzig Dortmund': 'logo.png',
-                'Einundzwanzig Gummersbach': 'logo.png',
-                'Einundzwanzig Bonn': 'logo.png',
-                'Einundzwanzig Moers': 'logo.png',
-                'Einundzwanzig Hennef': 'logo.png',
-                'Einundzwanzig Essen': 'logo.png',
-                'Einundzwanzig Niederrhein': 'logo.png',
-                'Einundzwanzig Aachen': 'logo.png',
-                'Einundzwanzig Köln': 'logo.png',
-                'Einundzwanzig Vreden': 'logo.png',
-                'Einundzwanzig Siegen': 'logo.png',
-                'Einundzwanzig Ostwestfalen-Lippe': 'logo.png',
-                'Einundzwanzig Bochum': 'logo.png',
-                'Einundzwanzig Heinsberg': 'logo.png'
+                // Try Telegram's web avatar API (format: https://t.me/i/avatar/group_username)
+                'Einundzwanzig Meetup Düsseldorf': 'https://t.me/i/avatar/einundzwanzig_duesseldorf',
+                'Einundzwanzig Dortmund': 'https://t.me/i/avatar/einundzwanzig_dortmund',
+                'Einundzwanzig Gummersbach': 'https://t.me/i/avatar/einundzwanzig_gummersbach',
+                'Einundzwanzig Bonn': 'https://t.me/i/avatar/einundzwanzig_bonn',
+                'Einundzwanzig Moers': 'https://t.me/i/avatar/einundzwanzig_moers',
+                'Einundzwanzig Hennef': 'https://t.me/i/avatar/einundzwanzig_hennef',
+                'Einundzwanzig Essen': 'https://t.me/i/avatar/einundzwanzig_essen',
+                'Einundzwanzig Niederrhein': 'https://t.me/i/avatar/einundzwanzig_niederrhein',
+                'Einundzwanzig Aachen': 'https://t.me/i/avatar/einundzwanzig_aachen',
+                'Einundzwanzig Köln': 'https://t.me/i/avatar/einundzwanzig_koeln',
+                'Einundzwanzig Vreden': 'https://t.me/i/avatar/einundzwanzig_vreden',
+                'Einundzwanzig Siegen': 'https://t.me/i/avatar/einundzwanzig_siegen',
+                'Einundzwanzig Ostwestfalen-Lippe': 'https://t.me/i/avatar/einundzwanzig_ostwestfalen_lippe',
+                'Einundzwanzig Bochum': 'https://t.me/i/avatar/einundzwanzig_bochum',
+                'Einundzwanzig Heinsberg': 'https://t.me/i/avatar/einundzwanzig_heinsberg'
             };
             
             // Check for conference logo first
