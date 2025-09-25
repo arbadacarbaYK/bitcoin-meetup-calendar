@@ -693,17 +693,17 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    height: 600px;
-    min-height: 600px;
+    height: 750px;
+    min-height: 750px;
 }
 
 .calendar-cell {
     border: 1px solid #333333;
     padding: 0.1rem;
-    min-height: calc(600px / 6);
+    min-height: calc(750px / 6);
     position: relative;
     overflow-y: auto;
-    max-height: calc(600px / 6);
+    max-height: calc(750px / 6);
 }
 
 /* Custom dark scrollbar styling */
@@ -743,15 +743,15 @@ body {
     font-weight: bold;
     margin-bottom: 0.1rem;
     color: #ffffff;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
 }
 
 .event-item {
     margin-bottom: 0.2rem;
     padding: 0.1rem;
     border-radius: 2px;
-    font-size: 0.85rem;
-    line-height: 1.1;
+    font-size: 1rem;
+    line-height: 1.2;
 }
 
 .event-item.bitcoin-holiday {
@@ -775,7 +775,7 @@ body {
 .event-title {
     font-weight: bold;
     margin-bottom: 0.02rem;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
 }
 
 /* Event title colors by type */
@@ -793,9 +793,9 @@ body {
 
 
 .event-description {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     opacity: 0.9;
-    line-height: 0.9;
+    line-height: 1.1;
 }
 
 .event-link {
@@ -888,18 +888,18 @@ body {
     }
     
     .calendar-cells {
-        height: 500px;
-        min-height: 500px;
+        height: 650px;
+        min-height: 650px;
     }
     
     .calendar-cell {
-        min-height: calc(500px / 6);
-        max-height: calc(500px / 6);
+        min-height: calc(650px / 6);
+        max-height: calc(650px / 6);
         padding: 0.02rem;
     }
     
         .event-item {
-            font-size: 0.75rem;
+            font-size: 0.9rem;
             padding: 0.05rem;
             margin-bottom: 0.15rem;
         }
