@@ -2061,7 +2061,6 @@ function initializeCalendar() {
                 'MIT Bitcoin Expo': 'https://mitbtcexpo.org/./assets/img/favicon.png',
                 'OPNEXT': 'https://opnext.dev/wp-content/uploads/2024/08/cropped-Layer-4-1-32x32.png',
                 'Plan B Forum': 'https://planb.lugano.ch/wp-content/uploads/2025/07/favicon_64.png',
-                'Africa Bitcoin Conference': 'https://www.afrobitcoin.org/favicon.png',
                 'The Bitcoin Rodeo': 'https://i0.wp.com/bitcoinrodeo.com/wp-content/uploads/2024/10/cropped-site-logo.png?fit=32%2C32&#038;ssl=1',
                 'Watch out, Bitcoin!': 'https://wobitcoin.org/wp-content/uploads/2025/03/Watch-Out-Bitcoin-2025-150x150.png',
                 'Bitcoin Dev Summit': 'https://satsconf.com.br/wp-content/uploads/2025/09/cropped-icon-32x32.png',
@@ -2076,7 +2075,9 @@ function initializeCalendar() {
             
             // Check for conference logo
             if (event.type === 'conference-event' && conferenceLogos[event.title]) {
-                return conferenceLogos[event.title];
+                // Add cache-busting parameter to prevent broken image caching
+                const baseUrl = conferenceLogos[event.title];
+                return `${baseUrl}?v=${Date.now()}&r=${Math.random()}`;
             }
             
             // No logos for meetups or conferences without specific logos
