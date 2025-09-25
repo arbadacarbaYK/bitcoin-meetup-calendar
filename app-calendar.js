@@ -998,18 +998,6 @@ function initializeCalendar() {
             links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_heinsberg' }],
             recurring: { type: 'monthly', pattern: '4th-monday' }
         },
-        {
-            id: 'meetup-duesseldorf-4th-wednesday-alt',
-            title: 'Einundzwanzig Düsseldorf (4th Wednesday)',
-            start: new Date(2025, 0, 22, 19, 0, 0), // January 22, 2025 (4th Wednesday), 7 PM
-            end: new Date(2025, 0, 22, 22, 0, 0),
-            type: 'meetup-event',
-            description: 'Zusätzliches monatliches Bitcoin Meetup in Düsseldorf (4th Wednesday).',
-            location: 'Düsseldorf',
-            organizer: 'Einundzwanzig Düsseldorf',
-            links: [{ name: 'Telegram', url: 'https://t.me/einundzwanzig_duesseldorf' }],
-            recurring: { type: 'monthly', pattern: '4th-wednesday' }
-        },
         
         {
             id: 'conference-bitcoin-conf',
