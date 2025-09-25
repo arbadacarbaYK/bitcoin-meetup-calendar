@@ -171,6 +171,18 @@ function initializeCalendar() {
             }
         },
         {
+            id: 'feb-09-dollar-parity',
+            title: 'Dollar Parity Day',
+            start: new Date(2025, 1, 9),
+            end: new Date(2025, 1, 9),
+            type: 'bitcoin-holiday',
+            description: 'Am 9. Februar 2011 erreichte Bitcoin erstmals Parität mit dem US-Dollar (1 BTC = 1 USD). Dies war ein wichtiger Meilenstein für die Akzeptanz von Bitcoin als Währung.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
+        },
+        {
             id: 'feb-19-trillion-dollar',
             title: 'The Trillion Dollar Day',
             start: new Date(2025, 1, 19),
@@ -346,6 +358,10 @@ function initializeCalendar() {
                 { name: 'Bitcoin Pizza Story', url: 'https://bitcoinmagazine.com/culture/bitcoin-pizza-day-celebrating-the-first-bitcoin-transaction' },
                 { name: 'Original Forum Post', url: 'https://bitcointalk.org/index.php?topic=137.0' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'may-23-ny-disagreement',
@@ -354,6 +370,10 @@ function initializeCalendar() {
             end: new Date(2025, 4, 23),
             type: 'bitcoin-holiday',
             description: 'Das Bitcoin Scaling Agreement, besser bekannt als New York Agreement, löste den Blocksize-Krieg von 2017 aus.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'may-25-craig-wright-fraud',
@@ -362,6 +382,10 @@ function initializeCalendar() {
             end: new Date(2025, 4, 25),
             type: 'bitcoin-holiday',
             description: 'Ein Tag, der die Blamage von Craig Steven Wright feiert, dem berüchtigten Lügner und Satoshi Nakamoto-Imitator.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // June Events
@@ -372,6 +396,10 @@ function initializeCalendar() {
             end: new Date(2025, 5, 9),
             type: 'bitcoin-holiday',
             description: 'Am 9. Juni 2021 stimmte El Salvadors Parlament dafür, Bitcoin als gesetzliches Zahlungsmittel im Land einzuführen.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'jun-12-bitcoin-bubble-2011',
@@ -380,6 +408,10 @@ function initializeCalendar() {
             end: new Date(2025, 5, 12),
             type: 'bitcoin-holiday',
             description: 'Der Preis von 1 Bitcoin erreichte während der Blase von 2011 einen Höchststand von 31,91 USD, bevor er den schärfsten Fall seiner Geschichte erlebte.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // July Events
@@ -390,6 +422,10 @@ function initializeCalendar() {
             end: new Date(2025, 6, 3),
             type: 'bitcoin-holiday',
             description: 'Dieser Tag markiert den Beginn des ersten "Utility Token" ICO namens Mastercoin (später zu Omni umbenannt).',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // August Events
@@ -400,6 +436,10 @@ function initializeCalendar() {
             end: new Date(2025, 7, 1),
             type: 'bitcoin-holiday',
             description: 'Das offizielle Ende der Blocksize-Kriege. Bitcoin-Nutzer demonstrierten ihre Unabhängigkeit von der Miner-Kontrolle.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'aug-08-segwit-lockin',
@@ -408,6 +448,10 @@ function initializeCalendar() {
             end: new Date(2025, 7, 8),
             type: 'bitcoin-holiday',
             description: 'Segregated Witness wurde offiziell durch den UASF-Client im Bitcoin-Netzwerk gesperrt.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'aug-11-bitcoin-meetup-duesseldorf',
@@ -432,6 +476,10 @@ function initializeCalendar() {
             end: new Date(2025, 7, 18),
             type: 'bitcoin-holiday',
             description: 'Satoshi Nakamoto registrierte Bitcoin.org am 18. August 2008, bevor das offizielle Whitepaper veröffentlicht wurde.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'aug-20-satoshi-emails-adam',
@@ -440,6 +488,10 @@ function initializeCalendar() {
             end: new Date(2025, 7, 20),
             type: 'bitcoin-holiday',
             description: 'Satoshi Nakamoto kontaktierte Adam Back an diesem Tag, um ihn über das Whitepaper zu informieren und die korrekte Zitierinformation für Adams Hashcash-Paper zu bestätigen.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'aug-21-bitcoin-infinity',
@@ -448,6 +500,10 @@ function initializeCalendar() {
             end: new Date(2025, 7, 21),
             type: 'bitcoin-holiday',
             description: 'Heute ist Bitcoin Infinity Day: ∞/21M am 21.8!',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'aug-23-segwit-activation',
@@ -456,6 +512,10 @@ function initializeCalendar() {
             end: new Date(2025, 7, 23),
             type: 'bitcoin-holiday',
             description: 'Am 23. August 2017 um 1:57 UTC aktivierte sich Segwit im Bitcoin-Mainnet bei Blockhöhe 481.824.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // September Events
@@ -466,6 +526,10 @@ function initializeCalendar() {
             end: new Date(2025, 8, 7),
             type: 'bitcoin-holiday',
             description: 'Am 7. September 2021 wurde Bitcoin in El Salvador gesetzliches Zahlungsmittel, 90 Tage nach der Veröffentlichung des Gesetzes.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'sep-13-hfsp-day',
@@ -474,6 +538,10 @@ function initializeCalendar() {
             end: new Date(2025, 8, 13),
             type: 'bitcoin-holiday',
             description: 'An diesem Tag sagte Udi zu Bitaroo "have fun staying poor" (HFSP). HFSP wird jetzt gegenüber Skeptikern und Kritikern verwendet.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // October Events
@@ -484,6 +552,10 @@ function initializeCalendar() {
             end: new Date(2025, 9, 1),
             type: 'bitcoin-holiday',
             description: 'Ross Ulbricht wurde gefangen genommen und für seine Rolle bei der Erstellung der Silk Road-Website inhaftiert.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'oct-06-bearwhale',
@@ -492,6 +564,10 @@ function initializeCalendar() {
             end: new Date(2025, 9, 6),
             type: 'bitcoin-holiday',
             description: 'An diesem glorreichen Tag der Schlacht postete ein Bitcoin-Wal eine 30.000 BTC Verkaufsmauer, was zu einem epischen Gefecht zwischen Hodlern und dem BearWhale führte.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'oct-31-bitcoin-whitepaper',
@@ -501,6 +577,10 @@ function initializeCalendar() {
             type: 'bitcoin-holiday',
             description: 'Satoshi Nakamoto veröffentlichte das Bitcoin-Whitepaper an die Kryptographie-Mailingliste und markierte damit seine offizielle Einführung in die Welt.',
             links: [{ name: 'Bitcoin Whitepaper', url: 'https://bitcoin.org/bitcoin.pdf' }],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // November Events
@@ -514,6 +594,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Diffie-Hellman Paper', url: 'https://ee.stanford.edu/~hellman/publications/24.pdf' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'nov-08-bitcoin-logo',
@@ -526,6 +610,10 @@ function initializeCalendar() {
                 { name: 'Bitcoin Logo Wikipedia', url: 'https://en.wikipedia.org/wiki/Bitcoin#Logo' },
                 { name: 'Bitcoin Logo Design History', url: 'https://bitcoinmagazine.com/culture/bitcoin-logo-design-history' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'nov-11-this-is-gentlemen',
@@ -537,6 +625,10 @@ function initializeCalendar() {
             links: [
                 { name: 'Reddit Post', url: 'https://www.reddit.com/r/Bitcoin/comments/2m6j8j/this_is_gentlemen/' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'nov-15-bitconnect',
@@ -549,6 +641,10 @@ function initializeCalendar() {
                 { name: 'BitConnect Wikipedia', url: 'https://en.wikipedia.org/wiki/BitConnect' },
                 { name: 'BitConnect Collapse', url: 'https://bitcoinmagazine.com/culture/bitconnect-collapse-what-happened' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'nov-17-s2x-failure',
@@ -561,6 +657,26 @@ function initializeCalendar() {
                 { name: 'SegWit2X Wikipedia', url: 'https://en.wikipedia.org/wiki/SegWit2x' },
                 { name: 'Bitcoin Magazine SegWit2X', url: 'https://bitcoinmagazine.com/guides/what-is-segwit2x' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
+        },
+        {
+            id: 'nov-14-taproot-upgrade',
+            title: 'Taproot Upgrade Day',
+            start: new Date(2025, 10, 14),
+            end: new Date(2025, 10, 14),
+            type: 'bitcoin-holiday',
+            description: 'Am 14. November 2021 wurde der Taproot-Upgrade im Bitcoin-Netzwerk aktiviert. Dies war der größte Bitcoin-Upgrade seit SegWit und verbesserte Privatsphäre, Skalierbarkeit und Smart Contract-Funktionalität.',
+            links: [
+                { name: 'Taproot Wikipedia', url: 'https://en.wikipedia.org/wiki/Taproot_(Bitcoin)' },
+                { name: 'Taproot BIP', url: 'https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki' }
+            ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'nov-28-haters-disbelief',
@@ -569,6 +685,10 @@ function initializeCalendar() {
             end: new Date(2025, 10, 28),
             type: 'bitcoin-holiday',
             description: 'Bitcoin ist 2013 erstmals vierstellig!',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'nov-21-23-bitfest-2025',
@@ -594,6 +714,10 @@ function initializeCalendar() {
             end: new Date(2025, 11, 10),
             type: 'bitcoin-holiday',
             description: 'Satoshi Nakamoto begann die Bitcoin-Mailingliste auf http://sourceforge.net mit der Nachricht "Willkommen zur Bitcoin-Mailingliste!"',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'dec-12-satoshi-final-message',
@@ -606,6 +730,22 @@ function initializeCalendar() {
                 { name: 'Satoshi Final Post', url: 'https://bitcointalk.org/index.php?topic=2216.msg29479#msg29479' },
                 { name: 'Satoshi Mystery', url: 'https://bitcoinmagazine.com/culture/satoshi-nakamoto-final-post-bitcoin-good-hands' }
             ],
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
+        },
+        {
+            id: 'dec-17-bitcoin-ath',
+            title: 'Bitcoin All-Time High Day',
+            start: new Date(2025, 11, 17),
+            end: new Date(2025, 11, 17),
+            type: 'bitcoin-holiday',
+            description: 'Am 17. Dezember 2017 erreichte Bitcoin sein damaliges Allzeithoch von fast 20.000 USD. Dies markierte den Höhepunkt des Bitcoin-Booms von 2017.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
         {
             id: 'dec-18-hodl-day',
@@ -614,6 +754,10 @@ function initializeCalendar() {
             end: new Date(2025, 11, 18),
             type: 'bitcoin-holiday',
             description: 'An diesem Tag im Jahr 2013 beschloss ein sehr betrunkener Nutzer in den bitcointalk.org-Foren, einen Beitrag darüber zu schreiben, warum er trotz des fallenden Preises nicht verkauft.',
+            recurring: {
+                type: 'yearly',
+                pattern: 'same-date'
+            }
         },
 
         // Sample recurring meetup events
